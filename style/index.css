@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar .dropdown-menu {
+  background-color: black;
+}
+.navbar a {
+  color: white;
+}
+
+.box {
+  display: flex;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
+}
+
+.percent .imgassure {
+  width: 25px;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.top-selling a {
+  color: black;
+  text-decoration: none !important;
+}
+
+.owl-nav button {
+  width: 25px;
+  text-align: center;
+  background-color: silver !important;
+  display: block;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  font-size: 15px !important;
+  border-radius: 50px !important;
+  position: absolute;
+  top: 50%;
+  margin: 20px;
+}
+.owl-nav .owl-next {
+  right: 0px;
+}
+
+.AdressTax ul {
+  list-style: none;
+}
+.AdressTax ul a {
+  color: white;
+}
+.AdressTax ul a:hover {
+  color: red;
+}
+
+.company {
+  text-align: justify;
+}
+
+/*product*/
+.description {
+  padding-top: 0px;
+}
+
+.delivery {
+  font-size: 30px;
+  color: rgb(66, 126, 255);
+}/*# sourceMappingURL=index.css.map */
