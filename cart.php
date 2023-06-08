@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <button class="btn btn-danger">Cancel</button>
-                <button class="btn btn-success">Place Order</button>
+                <button class="btn btn-success" name="placeOrder">Place Order</button>
             </div>
         </div>
     </div>

@@ -95,7 +95,7 @@
                 <a href="<?php echo "cart.php?id=$id" ?>" class="btn btn-warning" style="width: 276px;" onclick="selectqty()">Add to Cart</a>
               </div>
               <div class="col-md-6 mt-2">
-                <a href="<?php echo "cart.php?id=$id" ?>" class="btn btn-success" style="width: 276px;">Buy Now</a>
+                <a href="<?php echo "cart.php?id=$id" ?>" class="btn btn-success" style="width: 276px;" onclick="selectqty()">Buy Now</a>
               </div>
             </div>
 
