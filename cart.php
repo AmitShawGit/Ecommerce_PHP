@@ -62,9 +62,10 @@
                     <div class="box1 text-right">
                         <p><?php echo $res['pname']  ?></p>
                         <p><?php echo $res['aprice'] * $qty ?></p>
-                        <p><?php echo $res['ofprice'] * $qty ?></p>
+                        <p><?php echo $res['aprice'] * $qty - $res['ofprice'] * $qty ?></p>
+                       
                         <hr>
-                        <p>$48,000</p>
+                        <p><?php echo $res['ofprice'] * $qty ?></p>
                     </div>
                 </div>
                 <button class="btn btn-danger">Cancel</button>
