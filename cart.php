@@ -68,8 +68,35 @@
                         <p><?php echo $res['ofprice'] * $qty ?></p>
                     </div>
                 </div>
+                <form action="" method="POST">
                 <button class="btn btn-danger">Cancel</button>
-                <button class="btn btn-success" name="placeOrder">Place Order</button>
+                <button class="btn btn-success" name="placeOrder" type="submit">Place Order</button>
+                </form>
+                <?php 
+                 if(isset($_POST['placeOrder'])){
+                    $productName =  $res['pname'];
+                    $actualPrice = $res['aprice'] * $qty ;
+                    $discountPrice = $res['aprice'] * $qty - $res['ofprice'] * $qty;
+                    $salePrice = $res['ofprice'] * $qty;
+    
+                    $orderinsertquery = "insert into orders(pname,aprice,disprice,saleprice) value('$productName','$actualPrice'
+                    ,'$discountPrice','$salePrice')";
+                    $insertquery = mysqli_query($con,$orderinsertquery);
+                    if($insertquery){
+                       ?>
+                       <script>
+                        alert("Order Successfull")
+                       </script>
+                       <?php
+                    }else{
+                        ?>
+                       <script>
+                        alert("Order Successfull")
+                       </script>
+                       <?php
+                    }
+                    }
+                ?>
             </div>
         </div>
     </div>
