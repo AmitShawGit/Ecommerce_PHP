@@ -46,17 +46,36 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="add-product.php" class="nav-link">
-                            <i class="fa-solid fa-server mx-1"></i>
-                            Product Mngmnt
-                        </a>
-                    </li>
 
                     <li class="nav-item">
-                        <a href="addform.php" class="nav-link">
+
+                        <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa-solid fa-server mx-1"></i> Product Mgmt
+                        </a>
+
+                        <div class="collapse adressTax" id="collapseExample">
+                            <ul style="padding-left:30px">
+                                <li>
+                                    <a href="add-product.php" class="nav-link">
+                                        
+                                        Add Product
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="view-product.php" class="nav-link">
+                                       
+                                        View Product
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="customer.php" class="nav-link">
                             <i class="fa-solid fa-chart-bar mx-1"></i>
-                            Addmission
+                            Customer
                         </a>
                     </li>
                     <li class="nav-item">
