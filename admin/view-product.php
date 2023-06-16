@@ -51,19 +51,31 @@
                                         <th>Sl No</th>
                                         <th>Name</th>
                                         <th>Actual Price</th>
-                                        <th>Offer Price</th>
+                                        
                                         <th>Discount</th>
-                                        <th>Image</th>
+                                        <th>Offer Price</th>
+                                       
                                         <th>Action</th>
                                     </thead>
                                     <tbody>
+                                        <?php 
+                                        $vale = "select * from orders";
+                                        $viewquery = mysqli_query($con,$vale);
+                                        while($res = mysqli_fetch_assoc($viewquery)){
+                                        $id = $res['id'];
+                                        $pname = $res['pname'];
+                                        $aPrice = $res['aPrice'];
+                                        $disprice = $res['disprice'];
+                                        $saleprice = $res['saleprice'];
+
+                                        ?>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $id ?></td>
+                                            <td><?php echo $pname ?></td>
+                                            <td><?php echo $aPrice ?></td>
+                                            <td><?php echo $disprice ?></td>
+                                            <td><?php echo $saleprice ?></td>
+                                            
                                             <td>
                                             <i class="fa fa-eye"></i>
                                                 <i class="fa fa-pen"></i>
@@ -72,6 +84,7 @@
                                         
                                         </td>
                                         </tr>
+                                        <?php }?>
                                     </tbody>
                                 </table>
                             </div>
